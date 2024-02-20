@@ -7,9 +7,52 @@
     <link rel="stylesheet" href="dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <p>Placeholder</p>
+    <header>
+      <img src="images/banner.png" alt="FTAJ" class="w-full">
+    </header>
+    <section class="bg-[#0B96FF] flex flex-wrap gap-8 items-center justify-around px-4 py-10 text-white">
+      <article class="max-w-2xl">
+        <p class="mb-8 text-3xl"><em>Hello there!</em> I'm AJ, a volunteer for an educational robotics program called <a href="https://firstinspires.org"><em class="underline">FIRST</em><sup>®</sup></a>. I make content and resources for volunteers, students, and mentors.</p>
+        <p>AJ is my name, and <em>FIRST</em> Technical Advisor is my volunteer role. Hence: FTAJ</p>
+      </article>
+      <article class="grow max-w-2xl">
+        <iframe class="max-w-full" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BKpe2MwTV_I?si=r7lJpY-hz0QZQSLC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </article>
+    </section>
+    <section class="px-4 py-20">
+      <article class="max-w-4xl mx-auto">
+        <div class="flex gap-4 items-center mb-8">
+          <h2 class="text-3xl">Content</h2>
+          <div class="g-ytsubscribe" data-channelid="UC2c09SH4YBpLj5lebxGgK5Q" data-layout="default" data-theme="dark" data-count="default"></div>
+        </div>
+        <p class="text-xl">Find <em>FIRST</em>-related content on my <a class="underline" href="https://youtube.com/@FTAAJ">YouTube channel</a> and subscribe to show your support.</p>
+      </article>
+    </section>
+    <section class="bg-[#F7A3A6] px-4 py-20">
+      <article class="max-w-4xl mx-auto">
+        <h2 class="mb-8 text-3xl">Resources</h2>
+        <div class="flex flex-wrap gap-8 justify-around">
+          <div class="max-w-xl">
+            <h3 class="mb-4 text-xl">FTC Switcher</h3>
+            <p class="mb-4 text-lg">For technical volunteers and tournament directors interested in live-streaming their <em>FIRST</em> Tech Challenge events, <strong>FTC Switcher</strong> can help. It acts as a bridge between the <em>FIRST</em> Tech Challenge <a class="underline" href="https://github.com/FIRST-Tech-Challenge/scorekeeper">scoring software</a> and <a class="underline" href="https://www.blackmagicdesign.com/products/atemmini">Blackmagic Design ATEM</a> video switchers for hands-free video switching during events.</p>
+            <p class="text-lg"><a class="bg-black inline-block px-4 py-2 rounded text-white transition-colors whitespace-nowrap hover:bg-[#ED1C24]" href="https://assets.ftaj.me/ftcswitcher/FTC%20Switcher.dmg">Download Now</a> <a class="border-2 border-black inline-block ml-4 px-3 py-2 rounded transition-colors whitespace-nowrap hover:border-[#ED1C24] hover:text-[#ED1C24]" href="https://github.com/aj-foster/ftcswitcher">See the Source</a></p>
+          </div>
+          <div class="max-w-2xl"><img src="images/ftcswitcher.png" alt="FTC Switcher Application"></div>
+        </div>
+      </article>
+    </section>
+    <footer class="bg-[#3D3D3D] px-4 py-8 text-center text-white">
+      <div class="max-w-xl mx-auto">
+        <p class="mb-8 text-sm">All content and resources &copy; 2023–<span id="year">2024</span> AJ Foster. The source of this site is on <a class="underline" href="https://github.com/aj-foster/ftaj.me">GitHub</a>.</p>
+        <p class="text-sm"><em>FIRST<sup>®</sup></em> and <em>FIRST<sup>®</sup></em> Tech Challenge (formerly also known as FTC<sup>®</sup>) are trademarks of For Inspiration and Recognition of Science and Technology (<em>FIRST<sup>®</sup></em>). </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').innerText = (new Date()).getFullYear();
+    </script>
+    <script src="https://apis.google.com/js/platform.js"></script>
   </body>
 </html>
